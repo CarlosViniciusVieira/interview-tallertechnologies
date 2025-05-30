@@ -52,10 +52,7 @@ namespace interview_tallertechnologies.Application.UseCases.User.v1.Queries
             catch (Exception ex)
             {
                 _logger.LogError(ex, $"[GetUserByUserNameUseCase].Handle - Ended");
-
-                return new QueryResult<GetUserByUserNameQueryResponse>(
-                    false,
-                    $"Error retrieving user: {ex.Message}");
+                throw;
             }
         }
     }

@@ -9,6 +9,8 @@ namespace interview_tallertechnologies.Api
     {
         public static void ConfigureServices(this IServiceCollection services)
         {
+
+
             services.AddAutoMapper(typeof(GetUserByUserNameQueryProfile).Assembly);
 
             services.AddMediatR(cfg =>

@@ -12,10 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\..\2-Core\interview-tallertechnologies.Application\interview-tallertechnologies.Application.csproj" />
     <ProjectReference Include="..\..\3-Infrastructure\interview-tallertechnologies.Data\interview-tallertechnologies.Data.csproj" />
   </ItemGroup>

@@ -3,8 +3,55 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.12.35527.113 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7DDFE8DE-9EBE-4886-B9F3-DEEFA3F6EDA0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-EntryPoint", "1-EntryPoint", "{362AC3D5-38DE-484F-9F21-F6A466A95222}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-Core", "2-Core", "{A7F60D99-E5BA-4C79-907B-0FCEFDE5C925}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-Infrastructure", "3-Infrastructure", "{7ADFED77-498A-49C0-97E3-E8FC874EA381}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "interview-tallertechnologies.Data", "src\3-Infrastructure\interview-tallertechnologies.Data\interview-tallertechnologies.Data.csproj", "{EEACD2C5-0403-40C8-986D-5AA956840E49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "interview-tallertechnologies.Domain", "src\2-Core\interview-tallertechnologies.Domain\interview-tallertechnologies.Domain.csproj", "{6CA83444-1F4A-4F6F-B39A-D41CF6479152}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "interview-tallertechnologies.Application", "src\2-Core\interview-tallertechnologies.Application\interview-tallertechnologies.Application.csproj", "{88273FC7-DC76-4920-9ABA-45281483C2E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "interview-tallertechnologies.Api", "src\1-EntryPoint\interview-tallertechnologies.Api\interview-tallertechnologies.Api.csproj", "{2EF7C199-8220-4747-A5C4-6CAC5DD2AC53}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EEACD2C5-0403-40C8-986D-5AA956840E49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEACD2C5-0403-40C8-986D-5AA956840E49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEACD2C5-0403-40C8-986D-5AA956840E49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEACD2C5-0403-40C8-986D-5AA956840E49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CA83444-1F4A-4F6F-B39A-D41CF6479152}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CA83444-1F4A-4F6F-B39A-D41CF6479152}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CA83444-1F4A-4F6F-B39A-D41CF6479152}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CA83444-1F4A-4F6F-B39A-D41CF6479152}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88273FC7-DC76-4920-9ABA-45281483C2E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88273FC7-DC76-4920-9ABA-45281483C2E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88273FC7-DC76-4920-9ABA-45281483C2E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88273FC7-DC76-4920-9ABA-45281483C2E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EF7C199-8220-4747-A5C4-6CAC5DD2AC53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EF7C199-8220-4747-A5C4-6CAC5DD2AC53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EF7C199-8220-4747-A5C4-6CAC5DD2AC53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EF7C199-8220-4747-A5C4-6CAC5DD2AC53}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{362AC3D5-38DE-484F-9F21-F6A466A95222} = {7DDFE8DE-9EBE-4886-B9F3-DEEFA3F6EDA0}
+		{A7F60D99-E5BA-4C79-907B-0FCEFDE5C925} = {7DDFE8DE-9EBE-4886-B9F3-DEEFA3F6EDA0}
+		{7ADFED77-498A-49C0-97E3-E8FC874EA381} = {7DDFE8DE-9EBE-4886-B9F3-DEEFA3F6EDA0}
+		{EEACD2C5-0403-40C8-986D-5AA956840E49} = {7ADFED77-498A-49C0-97E3-E8FC874EA381}
+		{6CA83444-1F4A-4F6F-B39A-D41CF6479152} = {A7F60D99-E5BA-4C79-907B-0FCEFDE5C925}
+		{88273FC7-DC76-4920-9ABA-45281483C2E2} = {A7F60D99-E5BA-4C79-907B-0FCEFDE5C925}
+		{2EF7C199-8220-4747-A5C4-6CAC5DD2AC53} = {362AC3D5-38DE-484F-9F21-F6A466A95222}
 	EndGlobalSection
 EndGlobal

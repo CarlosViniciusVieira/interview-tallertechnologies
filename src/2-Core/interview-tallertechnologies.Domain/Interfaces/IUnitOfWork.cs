@@ -1,11 +1,12 @@
 ﻿namespace interview_tallertechnologies.Domain.Interfaces
 {
-    public interface IUnitOfWork
+    public interface IUnitOfWork : IDisposable
     {
-        public interface IUnitOfWork : IDisposable
-        {
-            IUserRepository Users { get; }
-            Task<int> CommitAsync();
-        }
+        IRepositoryBase<T> Repository<T>() where T : class;
+        Task<int> CommitAsync();
+        Task CommitTransactionAsync();
+        Task BeginTransactionAsync();
+        Task RollbackAsync();
     }
+
 }

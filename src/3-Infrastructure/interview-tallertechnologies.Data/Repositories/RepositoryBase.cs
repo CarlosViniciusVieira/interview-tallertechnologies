@@ -1,5 +1,7 @@
 ﻿using interview_tallertechnologies.Data.Context;
 using interview_tallertechnologies.Domain.Interfaces;
+using Microsoft.EntityFrameworkCore;
+using System.Linq.Expressions;
 
 namespace interview_tallertechnologies.Data.Repositories
 {
@@ -10,5 +12,8 @@ namespace interview_tallertechnologies.Data.Repositories
         {
             _context = context;
         }
+
+        public async Task<IEnumerable<T>> FindAsync(Expression<Func<T, bool>> predicate)
+            => await _context.Set<T>().Where(predicate).ToListAsync();
     }
 }
